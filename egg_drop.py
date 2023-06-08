@@ -78,7 +78,3 @@ def total_bitstrings_tp(n, k, memo={}):
     for i in range(k):
         m += total_bitstrings_tp(n-i-1, k, memo)
     return m 
-
-
-print(total_bitstrings(11, 5))
-print(total_bitstrings_tp(11, 5))
